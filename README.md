@@ -66,7 +66,7 @@ flowchart LR
 
 📐 **Full diagrams** (component view, sequence diagram, per-stage flowcharts, data
 model, training pipeline): [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
-📖 **Plain-English explanation** with no background needed: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
+📖 **Plain-English explanation**: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
 
 ## Model Results
 
