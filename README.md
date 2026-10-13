@@ -1,6 +1,6 @@
 # 💳 Financial Decision Engine
 
-**A full-stack machine learning web app that finds the credit cards that match what you want, then predicts your probability of being approved for each one.**
+**This is a full-stack machine learning web app that finds the credit cards that match what you want, then predicts your probability of being approved for each one.**
 
 [![CI](https://github.com/harrepk/Financial-Decision-Engine/actions/workflows/ci.yml/badge.svg)](https://github.com/harrepk/Financial-Decision-Engine/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
