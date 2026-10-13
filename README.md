@@ -15,9 +15,9 @@
 
 ---
 
-## Why I built this
+## Why I Built This
 
-Choosing a credit card is confusing. There are hundreds of options, and banks
+Choosing a credit card can typically be confusing to most. There are hundreds of options, and banks
 don't explain how they decide who gets approved, so many people apply blindly.
 In Canada, each application can leave a hard inquiry on your credit report, so
 a rejection costs more than just disappointment.
@@ -33,7 +33,7 @@ trained offline and served from a saved artifact.
 
 ## Features
 
-- **Plain-English card search.** Type *"no foreign transaction fee travel card"*
+- **Card search.** Type *"no foreign transaction fee travel card"*
   and get the three closest matches, ranked by TF-IDF + cosine similarity.
 - **Per-card approval odds.** A PyTorch neural network scores every match from your
   credit score, income and debt, plus how demanding each card is.
@@ -45,7 +45,7 @@ trained offline and served from a saved artifact.
 - **Honest evaluation.** The neural network is benchmarked against a logistic
   regression baseline on held-out data.
 
-## How it works
+## How it Works
 
 ```mermaid
 flowchart LR
@@ -58,7 +58,7 @@ flowchart LR
     API -- "JSON response" --> UI
 ```
 
-| Stage | What it does | Tech |
+| Stage | What it Does | Tech |
 |---|---|---|
 | **1 · The Matchmaker** | Turns your search and every card's description into TF-IDF vectors, then ranks cards by cosine similarity. Keeps "no" as a meaningful word, merges plurals, and uses two-word phrases. Returns nothing (with a helpful hint) if no card is relevant. | scikit-learn, SQLite |
 | **2 · The Predictor** | Builds a `[3, 4]` tensor (3 cards × 4 features: credit score, log income, log debt, card tier), runs a 4 → 32 → 16 → 1 MLP, and applies a sigmoid to get a probability for each card in one batched pass. | PyTorch |
@@ -68,7 +68,7 @@ flowchart LR
 model, training pipeline): [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 📖 **Plain-English explanation** with no background needed: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
 
-## Model results
+## Model Results
 
 Trained on 4,000 synthetic applications and evaluated on 1,000 held-out ones:
 
@@ -88,7 +88,7 @@ higher income ↑, more premium card ↓.
 > never sees that policy; it has to learn it from examples. See the
 > [walkthrough notebook](notebooks/model_walkthrough.ipynb) for the data exploration.
 
-## Tech stack
+## Tech Stack
 
 | Layer | Technology | Why |
 |---|---|---|
@@ -138,7 +138,7 @@ ruff check .                # lint
 > `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, or skip activation and
 > call `.venv\Scripts\python -m uvicorn ...` / `.venv\Scripts\python -m streamlit ...` directly.
 
-## API reference
+## API Reference
 
 | Method | Endpoint | Purpose |
 |---|---|---|
@@ -192,7 +192,7 @@ prediction endpoints return **HTTP 503** with the command to fix it.
 
 </details>
 
-## Project structure
+## Project Structure
 
 ```
 financial-decision-engine/
@@ -224,7 +224,7 @@ financial-decision-engine/
 └── requirements.txt
 ```
 
-## Engineering challenges solved
+## Engineering Challenges Solved
 
 | Challenge | What goes wrong | How it's handled |
 |---|---|---|
@@ -238,7 +238,7 @@ financial-decision-engine/
 | **SQL injection** | String-built SQL queries are exploitable. | All queries are parameterised. |
 | **Finance-specific NLP** | Standard stop-word lists drop "no", so "no annual fee" matches "annual fee". | Custom analyzer keeps "no", adds bigrams and light stemming. |
 
-## Limitations and responsible use
+## Limitations and Responsible Use
 
 - **Synthetic data, fictional cards.** Percentages demonstrate the technique; they are
   not real lender decisions and this is **not financial advice**.
