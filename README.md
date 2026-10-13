@@ -17,7 +17,7 @@
 
 ## Why I Built This
 
-Choosing a credit card can typically be confusing to most. There are hundreds of options, and banks
+Choosing a credit card can typically be confusing for most. There are hundreds of options, and banks
 don't explain how they decide who gets approved, so many people apply blindly.
 In Canada, each application can leave a hard inquiry on your credit report, so
 a rejection costs more than just disappointment.
