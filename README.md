@@ -259,8 +259,6 @@ financial-decision-engine/
 
 **Harre Prakash Kumar** ([@harrepk](https://github.com/harrepk)), Computer Engineering, Toronto Metropolitan University (TMU)
 
-Built as a portfolio project for software engineering, ML and platform engineering internships.
-
 ## License
 
 [MIT](LICENSE) © 2026 Harre Prakash Kumar
