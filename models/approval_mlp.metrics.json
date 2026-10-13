@@ -1,0 +1,10 @@
+{
+  "mlp_val_accuracy": 0.822,
+  "mlp_val_auc": 0.8947,
+  "logreg_val_accuracy": 0.788,
+  "logreg_val_auc": 0.8727,
+  "best_val_loss": 0.4063,
+  "best_epoch": 59,
+  "train_rows": 4000,
+  "val_rows": 1000
+}

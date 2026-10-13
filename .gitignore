@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Generated at runtime (recreated automatically)
+data/cards.db
+data/synthetic_applications.csv
+models/notebook_model.*
+
+# Local settings / OS / editors
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Note: models/approval_mlp.pt is committed on purpose (about 7 KB),
+# so the app runs right after cloning without retraining.
