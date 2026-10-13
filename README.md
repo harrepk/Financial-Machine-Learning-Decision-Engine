@@ -64,9 +64,9 @@ flowchart LR
 | **2 · The Predictor** | Builds a `[3, 4]` tensor (3 cards × 4 features: credit score, log income, log debt, card tier), runs a 4 → 32 → 16 → 1 MLP, and applies a sigmoid to get a probability for each card in one batched pass. | PyTorch |
 | **3 · The API & UI** | FastAPI validates inputs with Pydantic, loads both models **once** at startup, and returns structured JSON. Streamlit renders it and keeps results in `st.session_state` across reruns. | FastAPI, Pydantic, Streamlit |
 
-📐 **Full diagrams** (component view, sequence diagram, per-stage flowcharts, data
+📐 **Full Diagrams** (component view, sequence diagram, per-stage flowcharts, data
 model, training pipeline): [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
-📖 **Plain-English explanation**: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
+📖 **Layman's Explanation**: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
 
 ## Model Results
 
