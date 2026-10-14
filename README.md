@@ -260,7 +260,3 @@ financial-decision-engine/
 ## Author
 
 **Harre Prakash Kumar** ([@harrepk](https://github.com/harrepk)), Computer Engineering, Toronto Metropolitan University (TMU)
-
-## License
-
-[MIT](LICENSE) © 2026 Harre Prakash Kumar
