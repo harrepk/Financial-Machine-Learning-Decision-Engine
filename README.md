@@ -81,7 +81,7 @@ Trained on 4,000 synthetic applications and evaluated on 1,000 held-out ones:
 
 The network wins because the hidden lending rules are non-linear (for example,
 premium cards are almost never approved for subprime credit scores, and debt
-matters *relative to* income), which a linear model can't fully capture. Sanity
+matters *relative to* income), which a linear model cannot fully capture. Sanity
 tests also confirm the model learned sensible directions: higher score ↑, more debt ↓,
 higher income ↑, more premium card ↓.
 
