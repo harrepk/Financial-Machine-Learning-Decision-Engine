@@ -9,7 +9,6 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-TF--IDF-F7931E?logo=scikitlearn&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-frontend-FF4B4B?logo=streamlit&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-database-003B57?logo=sqlite&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 ![App screenshot: a travel card search showing three matched cards with approval odds of 91%, 73% and 44%](docs/images/app_results.png)
 
