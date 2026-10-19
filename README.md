@@ -2,7 +2,7 @@
 
 **This is a full-stack machine learning web app that finds the credit cards that match what you want, then predicts your probability of being approved for each one.**
 
-[![CI](https://github.com/harrepk/Financial-Decision-Engine/actions/workflows/ci.yml/badge.svg)](https://github.com/harrepk/Financial-Decision-Engine/actions/workflows/ci.yml)
+[![CI](https://github.com/harrepk/Financial-Machine-Learning-Decision-Engine/actions/workflows/ci.yml/badge.svg)](https://github.com/harrepk/Financial-Machine-Learning-Decision-Engine/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688?logo=fastapi&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-neural%20network-EE4C2C?logo=pytorch&logoColor=white)
@@ -106,8 +106,8 @@ higher income ↑, more premium card ↓.
 **Requirements:** Python 3.10+ (tested on Python 3.12, Windows 11).
 
 ```bash
-git clone https://github.com/harrepk/Financial-Decision-Engine.git
-cd Financial-Decision-Engine
+git clone https://github.com/harrepk/Financial-Machine-Learning-Decision-Engine.git
+cd Financial-Machine-Learning-Decision-Engine
 
 python -m venv .venv
 # Windows (PowerShell):   .venv\Scripts\Activate.ps1
