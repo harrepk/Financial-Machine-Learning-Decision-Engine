@@ -256,6 +256,3 @@ financial-decision-engine/
 - [ ] Docker Compose for one-command startup, then deploy (e.g. Render + Streamlit Community Cloud)
 - [ ] Larger card catalogue and filters (annual fee cap, card network)
 
-## Author
-
-**Harre Prakash Kumar** ([@harrepk](https://github.com/harrepk)), Computer Engineering, Toronto Metropolitan University (TMU)
